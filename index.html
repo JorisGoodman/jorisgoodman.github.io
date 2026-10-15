@@ -3,27 +3,32 @@
 <head>
 <script id="discord:component-embed" type="application/json">
 {
+  "flags": 32768,
   "components": [
     {
-      "id": 180865885,
-      "type": 1,
+      "type": 1,  // ComponentType.ACTION_ROW
       "components": [
         {
-          "id": 618950323,
-          "type": 2,
+          "type": 2,  // ComponentType.BUTTON
+          "custom_id": "click_yes",
+          "label": "Accept",
+          "style": 1
+        },
+        {
+          "type": 2,  // ComponentType.BUTTON
+          "label": "Learn More",
           "style": 5,
-          "label": "Check if it is",
-          "url": "https://jorisgoodman.github.io/",
-          "action_set_id": "555533818"
+          "url": "http://watchanimeattheoffice.com/"
+        },
+        {
+          "type": 2,  // ComponentType.BUTTON
+          "custom_id": "click_no",
+          "label": "Decline",
+          "style": 4
         }
       ]
     }
-  ],
-  "actions": {
-    "555533818": {
-      "actions": []
-    }
-  }
+  ]
 }
 </script>
 
